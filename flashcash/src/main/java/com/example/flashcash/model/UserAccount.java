@@ -15,4 +15,18 @@ public class UserAccount {
     private Double amount;
     private String iban;
 
+
+    public UserAccount plus(double amount) {
+
+        this.amount += amount;
+        return this;
+
+    }
+
+    public UserAccount minus(double amount) {
+
+        this.amount -= amount;
+        return this;
+    }
+
 }
