@@ -26,7 +26,14 @@ public UserController(UserService userService) {
 
     @GetMapping("/signup")
     public ModelAndView showRegisterForm() {
+
         return new ModelAndView("signup", "signUpForm", new SignUpForm());
+    }
+
+    @PostMapping("/signup")
+    public ModelAndView processRequest(@ModelAttribute("signupForm") SignUpForm form) {
+        userService.registration(form);
+        return new ModelAndView("signin");
     }
 
 
