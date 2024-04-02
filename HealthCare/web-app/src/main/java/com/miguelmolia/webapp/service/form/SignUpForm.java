@@ -1,4 +1,4 @@
-package com.miguelmolia.webapp.service.form;
+package com.example.flashcash.service.form;
 
 public class SignUpForm {
 
