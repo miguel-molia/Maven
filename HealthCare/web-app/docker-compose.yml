@@ -1,0 +1,15 @@
+services:
+
+
+  web-app:
+    image: "miguelmolia/web-app:latest"
+    container_name: web-app
+    ports:
+      - "9010:8080"
+
+
+
+
+networks:
+  healthcare:
+    driver: "bridge"
