@@ -1,13 +1,11 @@
 spring:
   application:
-
     name: "configserver"
   profiles:
     # active: native
     active: git
   cloud:
     config:
-
       server:
         # native:
           # search-locations: "classpath:/config"
@@ -18,9 +16,6 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
-
-
-
 
 management:
   endpoints:
